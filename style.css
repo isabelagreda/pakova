@@ -24,3 +24,7 @@ html{scroll-behavior:smooth}section[id],.how,.visual-proof{scroll-margin-top:24p
 /* Reserva de espacio para el menú lateral */
 main{margin-left:250px!important}header,.section-tabs{margin-left:250px!important}footer{margin-left:250px!important}@media(max-width:800px){main,header,.section-tabs,footer{margin-left:0!important}}
 
+
+/* Corrección de ancho junto al menú lateral */
+html,body{overflow-x:hidden}main{margin-left:210px!important;width:calc(100% - 210px);box-sizing:border-box}header,footer{margin-left:210px!important;width:calc(100% - 210px);box-sizing:border-box}@media(max-width:800px){main,header,footer{margin-left:0!important;width:100%}}
+
