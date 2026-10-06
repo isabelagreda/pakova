@@ -13,3 +13,7 @@ header{background:#111!important;color:#fff!important;border-color:#3a3a3a!impor
 /* Navegación única */
 .tech-sidebar{display:none!important}.tech-sidebar~*{margin-left:0!important}.tech-sidebar~footer{margin-left:0!important}
 
+
+/* Menú lateral principal */
+.tech-sidebar{display:flex!important}.section-tabs{display:none!important}@media(max-width:800px){.tech-sidebar{display:block!important}}
+
