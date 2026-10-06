@@ -20,3 +20,7 @@ header{background:#111!important;color:#fff!important;border-color:#3a3a3a!impor
 
 html{scroll-behavior:smooth}section[id],.how,.visual-proof{scroll-margin-top:24px}
 
+
+/* Reserva de espacio para el menú lateral */
+main{margin-left:250px!important}header,.section-tabs{margin-left:250px!important}footer{margin-left:250px!important}@media(max-width:800px){main,header,.section-tabs,footer{margin-left:0!important}}
+
