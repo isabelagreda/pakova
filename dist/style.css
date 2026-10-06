@@ -70,3 +70,7 @@ body.light-mode{background:#f5f6f2!important;color:#111!important}body.light-mod
 /* Componentes oscuros en modo claro */
 body.light-mode .tag{background:#e5ebe6!important;color:#172019!important;border:1px solid #c2cec5!important}body.light-mode .course-meta span{background:#e5ebe6!important;color:#172019!important;border-color:#aebdb2!important}body.light-mode .next-card .button.dark,body.light-mode .button.dark{background:#172019!important;color:#fff!important;border-color:#172019!important}body.light-mode .next-card small{color:#405047!important}body.light-mode .course-grid article>span:first-child{color:#8b6800!important}body.light-mode .partners>span{color:#172019!important}body.light-mode .theme-switch{color:#172019!important}
 
+
+/* Switch siempre visible dentro del menú lateral */
+@media(min-width:801px){.tech-sidebar{overflow-y:auto}.theme-switch{position:absolute!important;left:20px!important;right:20px!important;bottom:44px!important;width:calc(100% - 40px)!important;margin:0!important}.tech-pulse{position:absolute!important;left:20px!important;bottom:20px!important}}
+
