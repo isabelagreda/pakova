@@ -74,3 +74,6 @@ body.light-mode .tag{background:#e5ebe6!important;color:#172019!important;border
 /* Switch siempre visible dentro del menú lateral */
 @media(min-width:801px){.tech-sidebar{overflow-y:auto}.theme-switch{position:absolute!important;left:20px!important;right:20px!important;bottom:44px!important;width:calc(100% - 40px)!important;margin:0!important}.tech-pulse{position:absolute!important;left:20px!important;bottom:20px!important}}
 
+
+.theme-switch{z-index:100!important;pointer-events:auto!important}
+
