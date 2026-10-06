@@ -28,3 +28,23 @@ main{margin-left:250px!important}header,.section-tabs{margin-left:250px!importan
 /* Corrección de ancho junto al menú lateral */
 html,body{overflow-x:hidden}main{margin-left:210px!important;width:calc(100% - 210px);box-sizing:border-box}header,footer{margin-left:210px!important;width:calc(100% - 210px);box-sizing:border-box}@media(max-width:800px){main,header,footer{margin-left:0!important;width:100%}}
 
+/* --- Pakova coherence pass --- */
+:root{--sidebar-w:210px}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{margin:0;background:#111;color:#fff}
+.tech-sidebar{position:fixed!important;left:0!important;top:0!important;bottom:0!important;width:var(--sidebar-w)!important;margin:0!important;z-index:50!important;background:#080909!important}
+header{position:relative!important;margin:0 0 0 var(--sidebar-w)!important;width:calc(100% - var(--sidebar-w))!important;min-height:86px!important;padding:18px 5%!important;background:#111!important}
+main{margin:0 0 0 var(--sidebar-w)!important;width:calc(100% - var(--sidebar-w))!important;max-width:none!important}
+main>.hero,main>.section,main>.how,main>.visual-proof,main>.manifesto{width:100%!important;margin-left:0!important}
+.hero,.section,.how,.visual-proof,.manifesto{padding-left:6%!important;padding-right:6%!important}
+.hero{min-height:640px!important;align-items:center!important}
+.hero-copy{max-width:720px!important}
+.brand-panel{max-width:560px!important;justify-self:end!important}
+.section-heading{align-items:end!important}
+.section-heading>p{max-width:520px!important}
+.media-grid,.learning-grid,.course-grid,.partners,.join-grid{max-width:1280px!important;margin-left:auto!important;margin-right:auto!important}
+.button{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:48px!important}
+footer{margin:0 0 0 var(--sidebar-w)!important;width:calc(100% - var(--sidebar-w))!important}
+.intent-nav,header nav{display:none!important}
+@media(max-width:800px){:root{--sidebar-w:0px}.tech-sidebar{position:sticky!important;width:100%!important;height:auto!important}.tech-sidebar~*{margin-left:0!important}header,main,footer{margin-left:0!important;width:100%!important}.hero,.section,.how,.visual-proof,.manifesto{padding-left:5%!important;padding-right:5%!important}.hero{min-height:0!important}.brand-panel{justify-self:stretch!important}}
