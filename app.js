@@ -24,3 +24,5 @@ document.querySelectorAll('footer details a').forEach((link,index)=>{const icons
 
 const consultaForm=document.querySelector("#consulta-form");if(consultaForm){consultaForm.addEventListener("submit",e=>{e.preventDefault();const n=document.querySelector("#nombre").value.trim(),m=document.querySelector("#mensaje").value.trim();window.open("https://wa.me/5493416206812?text="+encodeURIComponent("Hola Pakova, soy "+n+". "+m),"_blank");});}
 
+
+const themeSwitch=document.querySelector("#theme-switch");const applyTheme=light=>{document.body.classList.toggle("light-mode",light);if(themeSwitch){themeSwitch.setAttribute("aria-pressed",String(light));themeSwitch.innerHTML=light?"<span aria-hidden=\"true\">☾</span> Modo nocturno":"<span aria-hidden=\"true\">☼</span> Modo claro"}};if(themeSwitch){const saved=localStorage.getItem("pakova-theme")==="light";applyTheme(saved);themeSwitch.addEventListener("click",()=>{const light=!document.body.classList.contains("light-mode");applyTheme(light);localStorage.setItem("pakova-theme",light?"light":"dark")})}
