@@ -1,5 +1,9 @@
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('#nav');
+const heroTitle=document.querySelector('.hero h1');if(heroTitle)heroTitle.innerHTML='Capacitación tecnológica gratuita<br><span>para abrir nuevas oportunidades.</span>';
+const heroIntro=document.querySelector('.hero .intro');if(heroIntro)heroIntro.textContent='Pakova acompaña a personas de Rosario que quieren aprender informática, acercarse al mundo IT y crecer junto a su comunidad.';
+const learningEyebrow=document.querySelector('#capacitaciones .eyebrow');if(learningEyebrow)learningEyebrow.textContent='01 / QUÉ HACEMOS';
+const learningTitle=document.querySelector('#capacitaciones h2');if(learningTitle)learningTitle.innerHTML='Aprendé tecnología<br>desde tu comunidad.';
 function closeMenu(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}
 menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);});
 nav.addEventListener('click',event=>{if(event.target.closest('a'))closeMenu();});
